@@ -10,6 +10,7 @@ led1 = board.get_pin('d:7:o')
 led2 = board.get_pin('d:8:o')
 led3 = board.get_pin('d:9:o')
 led4 = board.get_pin('d:10:o')
+led5 = board.get_pin('d:11:o')
 
 
 while True:
@@ -27,11 +28,13 @@ while True:
         led2.write(2)
         led3.write(3)
         led4.write(4)
+        led5.write(5)
 
     led1.write(0)
     led2.write(0)
     led3.write(0)
     led4.write(0)
+    led5.write(0)
 
     cv2.imshow('IMG', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
